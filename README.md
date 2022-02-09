@@ -9,7 +9,7 @@ import requests
 proxy = '[IP]:[Port]'
 
 try:
-  r = request.get(URL, proxies={'http': proxy, 'https': 'proxy'})
+  r = requests.get(URL, proxies={'http': proxy, 'https': 'proxy'})
   print(r.json())
 except:
   pass
