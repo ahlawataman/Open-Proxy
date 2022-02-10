@@ -9,7 +9,7 @@ import requests
 proxy = '[IP]:[Port]'
 
 try:
-  r = requests.get(URL, proxies={'http': proxy, 'https': 'proxy'})
+  r = requests.get(URL, proxies={'http': proxy, 'https': proxy}) #Can also add timeout=3 parameter
   print(r.json())
 except:
   pass
